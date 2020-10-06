@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { getSortedPostsData } from '../lib/posts'
 import Date from '../components/date'
+import { motion } from 'framer-motion'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
